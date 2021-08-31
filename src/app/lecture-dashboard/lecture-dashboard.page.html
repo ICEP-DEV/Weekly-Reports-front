@@ -1,35 +1,48 @@
-<ion-header>
-    <ion-toolbar color="primary">
-        <div *ngIf="contentLoaded">
-            <ion-title class="text-center">Dashboard</ion-title>
-            <div>
-                <a [routerLink]="['/reports']" class="view" (click)="reports()">My Reports</a>
+
+
+<ion-content class="background">
+
+
+
+    <ion-header class="header">
+        <ion-toolbar color="primary">
+
+            <div *ngIf="contentLoaded">
+                        <ion-title class="text-center">Dashboard</ion-title>
+                            <div>
+                                <a [routerLink]="['/reports']" class="view" (click)="reports()">My Reports</a>
+                            </div>
+                
+                        </div>
+                        <div *ngIf="!contentLoaded">
+                        <ion-skeleton-text animated></ion-skeleton-text>
             </div>
 
-        </div>
-        <div *ngIf="!contentLoaded">
-            <ion-skeleton-text animated></ion-skeleton-text>
-        </div>
-    </ion-toolbar>
-</ion-header>
 
-<ion-content class="text-center">
-    <ion-card color="light">
-        <ion-card-header>
+        </ion-toolbar>
+    </ion-header>
+ <br>
+
+    <ion-card class="name" >
+
+
+        <ion-card-header >
             <ion-card-title class="text-center"></ion-card-title>
             <div *ngIf="contentLoaded">
                 <ion-avatar class="avatar">
-                    <img src="../../assets/images/av.png">
+                    <img src="../../assets/images/logo-icon.png">
                 </ion-avatar>
             </div>
             <div *ngIf="!contentLoaded">
                 <ion-skeleton-text animated style="width: 2%;"></ion-skeleton-text>
-                <ion-skeleton-text animated style="width: 5%;"></ion-skeleton-text>
+                <ion-skeleton-text animated style="width: 2%;"></ion-skeleton-text>
                 <ion-skeleton-text animated style="width: 2%;"></ion-skeleton-text>
             </div>
         </ion-card-header>
-        <ion-card-content>
-            <ion-text>
+
+
+        <ion-card-content >
+            <ion-text class="deets">
                 <div *ngIf="contentLoaded">
                     <h3 class="text-center">{{lectureName}}</h3>
                     <h3 class="text-center">{{email}}</h3>

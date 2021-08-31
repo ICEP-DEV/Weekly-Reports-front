@@ -25,12 +25,24 @@ export class LecDetailedReportPage implements OnInit {
   attendAvg;
   date;
   department;
+ 
+
+  form2 = {
+    assesses: '',
+    numStud: '',
+    studSub: '',
+    numAtt: '',
+  };
+
+  sub() {
+    console.log(this.form2);
+  }
 
   constructor(private router: Router, private lectureService: LectureService, private route: ActivatedRoute ) {
     this.route.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation().extras.state) {
         this.temp = this.router.getCurrentNavigation().extras.state.detailed;
-        console.log('my reporst:', this.temp);
+        console.log('my report:', this.temp);
         this.lecture = this.temp[0].title + ' ' + this.temp[0].lecName + ' ' + this.temp[0].lecSurname;
         this.lectureNumber = this.temp[0].lecNum;
         this.modules = this.temp[0].subjCode + ' - ' + this.temp[0].subjName;

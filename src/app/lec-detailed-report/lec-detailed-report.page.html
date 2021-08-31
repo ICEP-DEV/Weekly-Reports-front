@@ -1,70 +1,82 @@
-<ion-header>
-    <ion-toolbar color="primary">
-        <ion-title>Detailed Report</ion-title>
-    </ion-toolbar>
-    <ion-item>
-        <a [routerLink]="['/reports']">My Reports</a>
-    </ion-item>
-</ion-header>
+<ion-content class="background">
+    <ion-header  class="header">
+        <ion-toolbar color="primary">
 
-<ion-content>
-    <ion-item>
-        <ion-label position="stacked">Lecture:</ion-label>
-        <ion-input readonly>{{lecture}}</ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked">Module:</ion-label>
-        <ion-input readonly>{{modules}}</ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked">Department:</ion-label>
-        <ion-input readonly>{{department}}</ion-input>
-    </ion-item>
 
-    <ion-item>
-        <ion-label position="stacked">Date:</ion-label>
-        <ion-input readonly>{{date}}</ion-input>
-    </ion-item>
+            <ion-title class="text-center">Detailed Report</ion-title>
 
-    <ion-item>
-        <ion-label position="stacked">Number of Students:</ion-label>
-        <ion-input readonly>{{numStudents}}</ion-input>
-    </ion-item>
+           
 
-    <ion-item>
-        <ion-label position="stacked">Week average Attendance:</ion-label>
-        <ion-input readonly>{{attendAvg}}</ion-input>
-    </ion-item>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="lecture-dashboard"></ion-back-button>
+            </ion-buttons>
 
-    <ion-item>
-        <ion-label position="stacked">Topic(s) covered</ion-label>
-        <ion-input readonly>{{topics}}</ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked">Mode of Teaching Used</ion-label>
-        <ion-input readonly>{{teachMode}}</ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked ">Mode of Presentation</ion-label>
-        <ion-input readonly>{{presentMode}}</ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label position="stacked ">Resources Used</ion-label>
-        <ion-input readonly>{{resources}}</ion-input>
-    </ion-item>
 
-    <ion-item>
-        <ion-label position="stacked ">Activities</ion-label>
-        <ion-input readonly>{{activities}}</ion-input>
-    </ion-item>
 
-    <ion-item>
-        <ion-label position="stacked">Assessments</ion-label>
-        <ion-input readonly>{{assess}}</ion-input>
-    </ion-item>
+        </ion-toolbar>
+       
+    </ion-header>
+    <br>
+    <ion-card class="name">
+        <ion-item>
+            <ion-label position="stacked">Lecture:</ion-label>
+            <ion-input readonly>{{lecture}}  </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Module:</ion-label>
+        
+            <ion-input readonly>{{modules}}  &nbsp;&nbsp;   </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Department:</ion-label>
+            <ion-input readonly>{{department}}</ion-input>
+        </ion-item>
 
-    <ion-item>
-        <ion-label position="stacked ">Challenge/Recommendations</ion-label>
-        <ion-input readonly>{{challRecomm}}</ion-input>
-    </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Date:</ion-label>
+            <ion-input readonly>{{date}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Number of Students:</ion-label>
+            <ion-input readonly>{{numStudents}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Week average Attendance:</ion-label>
+            <ion-input readonly>{{attendAvg}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Topic(s) covered</ion-label>
+            <ion-input readonly>{{topics}}</ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Mode of Teaching Used</ion-label>
+            <ion-input readonly>{{teachMode}}</ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked ">Mode of Presentation</ion-label>
+            <ion-input readonly>{{presentMode}}</ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked ">Resources Used</ion-label>
+            <ion-input readonly>{{resources}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked ">Activities</ion-label>
+            <ion-input readonly>{{activities}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Assessments</ion-label>
+            <ion-input readonly>{{assess}}</ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked ">Challenge/Recommendations</ion-label>
+            <ion-input readonly>{{challRecomm}}</ion-input>
+        </ion-item>
+    </ion-card>
 </ion-content>
