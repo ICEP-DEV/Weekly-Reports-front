@@ -1,0 +1,46 @@
+.background{
+    text-align: center;
+    padding: 0px;
+
+
+     --background:url(../../assets/images/backdrop5.jpg) no-repeat center center / cover;; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  //background-color: rgb(128, 187, 19);
+
+
+ 
+  height: 100px;
+
+}
+
+.header{
+    top:8%;
+    width: 40%;
+  align-items: center;
+  display:inline-block;
+}
+
+.name{
+
+    top:8%;
+    height: 80%;
+  
+   
+    --ion-background-color:#eff3eb42,05;
+    width:40%; // adjust width on your ion-card suitable on your screen
+    display:inline-block;
+    margin: 0 auto;
+
+}
+
+.text-center{
+    text-align: center;
+    padding: 0px;
+
+}
+.view{
+
+    padding-right: 2%;
+}
